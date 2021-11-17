@@ -55,7 +55,6 @@ for folderName in folders:
         print(str(folderName))
         catalog = json.load(urllib2.urlopen(baseUrl + "/" + folderName + "/" + "?token=" + token + "&f=json"))
         services = catalog['services']
-        parseServices(searchString)
         for service in services:
             if service['type']!= 'StreamServer':
                 manifestUrl = baseUrl + "/" + str(folderName) + '/' + service['serviceName'] + '.' + service['type'] + "/iteminfo/manifest/manifest.json" + "?token=" + token + "&f=json"
