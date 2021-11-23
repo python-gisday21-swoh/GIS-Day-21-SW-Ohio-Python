@@ -1,7 +1,7 @@
 import urllib, urllib2, json
 
-##This is a quick throw together that returns the REST URL for published services
-##as there was a question regarding this process during the GIS Day presentation
+##This is a quick throw together that returns the REST URL for published services using string concatenation
+##as there was a question regarding this process during the 2021 SWOGIS GIS Day presentation
 
 
 # Variables
